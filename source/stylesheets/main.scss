@@ -1,7 +1,41 @@
 /** main.scss **/
+@import "susy";
+
+body {
+	@include container(80em);
+}
 
 .vcard {
-	width: 80%;
-	margin: auto;
-	margin-top: 10%
+	@include span(80%);
+	margin-top: gutter();
+	margin-left: gutter();
+	margin-right: gutter();
+
+	.fn {
+		@include span(3 of 3);
+		margin-bottom: 0.5em;
+	}
+
+	.role {
+		@include span(2 of 3 first);
+		font-size: 1em;
+		text-decoration: underline;
+		margin-top: 0;
+		margin-bottom: 1em;
+	}
+
+	.photo {
+		@include span(1 of 3 first);
+	}
+
+	p {
+		@include span(3 of 3);
+		line-height: 1.3em;
+	}
+	p:first-of-type {
+		@include span(2 of 3 last);
+		margin-top: 0;
+		margin-bottom: 0.5em;
+	}
+
 }
