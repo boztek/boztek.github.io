@@ -31,6 +31,15 @@ end
 
 page "/feed.xml", layout: false
 
+activate :google_analytics do |ga|
+  # Property ID (default = nil)
+  ga.tracking_id = 'UA-58934860-1'
+  # Removing the last octet of the IP address (default = false)
+  ga.anonymize_ip = false
+  # Tracking in development environment (default = true)
+  ga.development = false
+end
+
 ###
 # Compass
 ###

@@ -8,6 +8,8 @@ gem "middleman-blog", "~> 3.5.3"
 gem "susy", "~> 2.2"
 gem "breakpoint", "~> 2.5"
 
+gem "middleman-google-analytics"
+
 # For feed.xml.builder
 gem "builder", "~> 3.0"
 
