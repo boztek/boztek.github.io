@@ -6,6 +6,7 @@ gem "middleman", "~> 3.3.7"
 gem "middleman-blog", "~> 3.5.3"
 
 gem "susy", "~> 2.2"
+gem "breakpoint", "~> 2.5"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
