@@ -2,8 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <meta http-equiv='X-UA-Compatible' content='IE=edge;chrome=1' />
-    <title>Blog Title<%= ' - ' + current_article.title unless current_article.nil? %></title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+    <title>Boris Gordon<%= ' - ' + current_article.title unless current_article.nil? %></title>
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
   </head>
   <body>
