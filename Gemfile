@@ -18,3 +18,6 @@ gem 'middleman-deploy', '~> 1.0'
 
 gem 'redcarpet', '~> 3.2.2'
 gem 'middleman-syntax', '~> 2.0.0'
+gem 'activesupport', '~> 4.1.0'
+gem 'padrino-helpers', '~> 0.12.3'
+gem 'listen', '>= 2.7.9'

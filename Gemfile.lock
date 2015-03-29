@@ -151,13 +151,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  activesupport (~> 4.1.0)
   breakpoint (~> 2.5)
   builder (~> 3.0)
+  listen (>= 2.7.9)
   middleman (~> 3.3.7)
   middleman-blog (~> 3.5.3)
   middleman-deploy (~> 1.0)
   middleman-google-analytics
   middleman-livereload (~> 3.4)
   middleman-syntax (~> 2.0.0)
+  padrino-helpers (~> 0.12.3)
   redcarpet (~> 3.2.2)
   susy (~> 2.2)
