@@ -102,6 +102,8 @@ set :images_dir, 'images'
 
 # Build-specific configuration
 configure :build do
+  activate :minify_html, remove_input_attributes: false
+
   # For example, change the Compass output style for deployment
   activate :minify_css
 

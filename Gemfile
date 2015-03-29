@@ -14,6 +14,7 @@ gem "middleman-google-analytics"
 gem "builder", "~> 3.0"
 
 gem 'middleman-livereload', '~> 3.4'
+gem 'middleman-minify-html', '~> 3.4.0'
 gem 'middleman-deploy', '~> 1.0'
 
 gem 'redcarpet', '~> 3.2.2'
