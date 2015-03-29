@@ -8,26 +8,30 @@ activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
   # blog.prefix = "blog"
 
-  # blog.permalink = "{year}/{month}/{day}/{title}.html"
+  blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
-  # blog.sources = "{year}-{month}-{day}-{title}.html"
+  blog.sources = "{year}-{month}-{day}-{title}.html"
   # blog.taglink = "tags/{tag}.html"
-  # blog.layout = "layout"
-  # blog.summary_separator = /(READMORE)/
-  # blog.summary_length = 250
+  blog.layout = "layout"
+  blog.summary_separator = /(READMORE)/
+  blog.summary_length = 250
   # blog.year_link = "{year}.html"
   # blog.month_link = "{year}/{month}.html"
   # blog.day_link = "{year}/{month}/{day}.html"
-  # blog.default_extension = ".markdown"
+  blog.default_extension = ".md"
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
+  # blog.tag_template = "tag.html"
+  # blog.calendar_template = "calendar.html"
 
   # Enable pagination
   # blog.paginate = true
   # blog.per_page = 10
   # blog.page_link = "page/{num}"
 end
+
+activate :syntax
+set :markdown_engine, :redcarpet
+set :markdown, :fenced_code_blocks => true, :smartypants => true
 
 page "/feed.xml", layout: false
 
@@ -44,10 +48,17 @@ end
 # Compass
 ###
 
+sourcemap = true
+
+configure :development do
+  set :sass, :sourcemap => :inline
+end
+
 # Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
+compass_config do |config|
+  config.output_style = :compact
+  config.sourcemap = true
+end
 
 ###
 # Page options, layouts, aliases and proxies
