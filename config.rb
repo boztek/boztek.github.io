@@ -20,8 +20,8 @@ activate :blog do |blog|
   # blog.day_link = "{year}/{month}/{day}.html"
   blog.default_extension = ".md"
 
-  # blog.tag_template = "tag.html"
-  # blog.calendar_template = "calendar.html"
+  blog.tag_template = "tag.html"
+  blog.calendar_template = "calendar.html"
 
   # Enable pagination
   # blog.paginate = true
@@ -48,16 +48,13 @@ end
 # Compass
 ###
 
-sourcemap = true
-
 configure :development do
-  set :sass, :sourcemap => :inline
+  set :sass, :sourcemap => :inline, style: :nested
 end
 
 # Change Compass configuration
 compass_config do |config|
   config.output_style = :compact
-  config.sourcemap = true
 end
 
 ###
@@ -107,16 +104,16 @@ set :images_dir, 'images'
 # Build-specific configuration
 configure :build do
   # For example, change the Compass output style for deployment
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
 
   # Enable cache buster
-  # activate :asset_hash
+  activate :asset_hash
 
   # Use relative URLs
-  # activate :relative_assets
+  activate :relative_assets
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
