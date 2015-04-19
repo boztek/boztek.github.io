@@ -27,7 +27,7 @@ body {
 		font-size: 1.5em;
 		line-height: 1em;
 		@include breakpoint($full) {
-			font-size: 3em;
+			font-size: 2.9em;
 			line-height: 1.5em;
 		}
 	}
@@ -48,6 +48,7 @@ body {
 
 	.photo {
 		@include span(1 of 3 first);
+		margin-bottom: 3.5%;
 	}
 
 	p {
@@ -58,7 +59,7 @@ body {
 
 		@include breakpoint($full) {
 			@include span(2 of 3 last);
-			font-size: 1.5em;
+			font-size: 1.6em;
 		}
 	}
 	p:first-of-type {
