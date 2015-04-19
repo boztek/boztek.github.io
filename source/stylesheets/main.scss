@@ -25,8 +25,10 @@ body {
 
 		font-family:"Assembler Regular", fantasy; font-weight:normal; font-style:normal;
 		font-size: 1.5em;
+		line-height: 1em;
 		@include breakpoint($full) {
 			font-size: 3em;
+			line-height: 1.5em;
 		}
 	}
 
@@ -40,7 +42,7 @@ body {
 
 		font-size: 1.25em;
 		@include breakpoint($full) {
-			font-size: 1.5em;
+			font-size: 2em;
 		}
 	}
 
