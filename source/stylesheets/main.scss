@@ -35,7 +35,7 @@ body {
 	.role {
 		@include span(3 of 3 first);
 
-		font-family:"Matrise Pro Regular", monospace; font-size-adjust:0.49; font-weight:normal; font-style:normal;
+		font-family:"Matrise Pro Regular", monospace; font-weight:normal; font-style:normal;
 		text-decoration: none;
 		margin-top: 0;
 		margin-bottom: 1em;
