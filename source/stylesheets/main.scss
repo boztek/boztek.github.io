@@ -13,7 +13,7 @@ body {
 	min-width: $default;
 }
 
-body[data-js="false"] .loader {
+body[data-loader="false"] .loader {
 	display: none;
 }
 

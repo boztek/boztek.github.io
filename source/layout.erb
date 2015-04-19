@@ -13,7 +13,7 @@
     </style>
     <script type="text/javascript">
       function showLoader() {
-        window.document.body.setAttribute('data-js', true);
+        window.document.body.removeAttribute('data-loader');
       }
       WebFontConfig = { fontdeck: { id: '54986' } };
       (function() {
@@ -28,7 +28,7 @@
     </script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/main.css">
   </head>
-  <body data-js="false" onload="showLoader()">
+  <body data-loader="false" onload="showLoader()">
     <div id="main" role="main">
       <div class="loader">
         <div id="squaresWaveG">
