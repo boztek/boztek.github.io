@@ -13,10 +13,6 @@ body {
 	min-width: $default;
 }
 
-body[data-loader="false"] .loader {
-	display: none;
-}
-
 .vcard {
 	@include span(80%);
 	margin-top: gutter();
@@ -53,6 +49,7 @@ body[data-loader="false"] .loader {
 	.photo {
 		@include span(1 of 3 first);
 		margin-bottom: 3.5%;
+		height: 100%;
 	}
 
 	p {
