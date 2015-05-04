@@ -5,3 +5,14 @@
   <p>Damn it, you've <i>found me</i>. I write software, live and work in <i class="adr"><span class="locality">Sydney</span>, <span class="country-name">Australia</span></i>.</p>
   <p>You can contact me by email (at <script type="text/javascript">var a="email";var b="boris.com.au";document.write('<a href="mailto:'+a+'@'+b+'">'+a+'@'+b+'</a>');</script><noscript>email&nbsp;[at]&nbsp;boris&nbsp;[dot]&nbsp;com&nbsp;[dot]&nbsp;au</noscript>) or on the internet as <a href="http://twitter.com/boztek">@<span class="nickname">boztek</span></a>.</p>
 </section>
+<section class="latest-content">
+  <h2>Latest content</h2>
+  <% blog.articles[0...5].each do |article| %>
+  <li>
+    <h2>
+      <a href="<%= article.url %>"><%= article.title %></a>
+      <time><%= article.date.strftime('%b %e %Y') %></time>
+    </h2>
+  </li>
+  <% end %>
+</section>
